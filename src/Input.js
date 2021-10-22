@@ -10,7 +10,8 @@ function Input({flagType,handleChange,obj,name,text,type}) {
                      style={flagType.flag?error:null}
                      onBlur={handleChange}
                     onChange={handleChange}
-                    value={obj}></input>
+                    value={obj}
+                    ></input>
                    {flagType.flag?<p className="warning">{flagType.message}</p>:null}
                 </div>
     )
