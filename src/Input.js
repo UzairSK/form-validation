@@ -12,6 +12,7 @@ function Input({flagType,handleChange,obj,name,text,type}) {
                     onChange={handleChange}
                     value={obj}
                     ></input>
+                    {/* displays error if validation parameters are not met */}
                    {flagType.flag?<p className="warning">{flagType.message}</p>:null}
                 </div>
     )
